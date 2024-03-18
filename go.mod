@@ -1,3 +1,3 @@
-module github.com/morganb27/pokedexcli.git
+module github.com/morganb27/pokedexcli
 
 go 1.22.1
