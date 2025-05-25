@@ -1,9 +1,11 @@
-package main
+package repl
 
 import (
 	"testing"
 	"fmt"
 	"reflect"
+
+	"github.com/morganb27/pokedexcli/utils"
 )
 
 func TestCleanInput(t *testing.T) {
@@ -30,7 +32,7 @@ func TestCleanInput(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		actual := cleanInput(c.input)
+		actual := utils.CleanInput(c.input)
 		if !reflect.DeepEqual(actual, c.expected) {
             t.Errorf("FAIL [%s]: input=%q expected=%v got=%v", c.name, c.input, c.expected, actual)
         } else {
