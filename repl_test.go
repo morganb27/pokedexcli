@@ -37,5 +37,4 @@ func TestCleanInput(t *testing.T) {
             fmt.Printf("PASS [%s]\n", c.name)
         }
 	}
-    
 }
